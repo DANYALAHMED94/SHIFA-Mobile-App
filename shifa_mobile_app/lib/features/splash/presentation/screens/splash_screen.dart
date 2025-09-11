@@ -1,4 +1,6 @@
+import 'package:go_router/go_router.dart';
 import 'package:shifa_mobile_app/core/exports.dart';
+import 'package:shifa_mobile_app/routes/routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -8,6 +10,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 3), () {
+      context.pushNamed(AppRouteNames.onboarding);
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
