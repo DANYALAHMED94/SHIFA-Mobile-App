@@ -35,7 +35,9 @@ class OnboardingScreenTwo extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 fontSize: 28,
                 width: MediaQueryHelper.screenWidth(context) * 0.50,
-                onTap: () {},
+                onTap: () {
+                  context.pushNamed(AppRouteNames.socialLoginScreen);
+                },
               ),
             ),
           ),

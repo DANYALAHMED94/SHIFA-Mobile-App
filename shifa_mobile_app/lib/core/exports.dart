@@ -11,3 +11,10 @@ export 'package:shifa_mobile_app/features/onboarding/presentation/widgets/onboar
 export 'package:go_router/go_router.dart';
 export 'package:shifa_mobile_app/routes/routes.dart';
 export 'package:shifa_mobile_app/core/widgets/custom_button.dart';
+export 'package:shifa_mobile_app/features/authentication/presentation/screens/social_login_screen.dart';
+export 'package:shifa_mobile_app/features/onboarding/presentation/screens/onboarding.dart';
+export 'package:shifa_mobile_app/features/onboarding/presentation/screens/onboarding_screen_two.dart';
+export 'package:shifa_mobile_app/features/splash/presentation/screens/splash_screen.dart';
+export 'package:shifa_mobile_app/features/authentication/presentation/widgets/auth_header.dart';
+export 'package:shifa_mobile_app/features/authentication/presentation/widgets/social_button.dart';
+

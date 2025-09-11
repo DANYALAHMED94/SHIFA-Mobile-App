@@ -1,7 +1,6 @@
-import 'package:go_router/go_router.dart';
-import 'package:shifa_mobile_app/features/onboarding/presentation/screens/onboarding.dart';
-import 'package:shifa_mobile_app/features/onboarding/presentation/screens/onboarding_screen_two.dart';
-import 'package:shifa_mobile_app/features/splash/presentation/screens/splash_screen.dart';
+import 'package:shifa_mobile_app/core/exports.dart';
+
+
 
 final GoRouter router = GoRouter(
   initialLocation: "/",
@@ -27,6 +26,13 @@ final GoRouter router = GoRouter(
         return OnboardingScreenTwo();
       },
     ),
+            GoRoute(
+      path: "/social_login_screen",
+      name: AppRouteNames.socialLoginScreen,
+      builder: (context, state) {
+        return SocialLoginScreen();
+      },
+    ),
   ],
 );
 
@@ -34,5 +40,7 @@ class AppRouteNames {
   static const String splash = "Splash";
   static const String onboarding = "onboarding_screen";
   static const String onboardingTwo = "onboarding_screen_two";
+  static const String socialLoginScreen = "social_login_screen";
+  
   
 }
