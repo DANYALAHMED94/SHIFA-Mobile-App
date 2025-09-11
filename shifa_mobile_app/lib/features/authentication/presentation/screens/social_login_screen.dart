@@ -35,11 +35,12 @@ class SocialLoginScreen extends StatelessWidget {
 
           RichText(
           text: TextSpan(
-            text: AppStrings.createNewAccount, 
+            text: AppStrings.createNewAccount , 
             style: TextStyle(fontSize: 21, color: AppColors.white,fontWeight: FontWeight.w400,),
             children: <TextSpan>[
+              
               TextSpan(
-                text: '${AppStrings.signUp}?',
+                text: ' ${AppStrings.signUp}?',
                 style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600, color: AppColors.secondary),
               ),
               
