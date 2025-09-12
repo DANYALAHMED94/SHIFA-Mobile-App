@@ -13,5 +13,12 @@ class Images {
   static const String facebookSvg = "$assets/facebook.svg";
   static const String appleSvg = "$assets/apple.svg";
   static const String lockSvg = "$assets/lock.svg";
+  static const String doctorHome = "$assets/home.svg";
+  static const String chatsSvg = "$assets/chats.svg";
+  static const String filesSvg = "$assets/files.svg";
+  static const String profileSvg = "$assets/profile.svg";
+  static const String assistantSvg = "$assets/assistant.svg";
+  static const String doctorImageSvg = "$assets/doctor_image.svg";
+  static const String doctorImagePng = "$assets/doctor_image.png";
   
 }

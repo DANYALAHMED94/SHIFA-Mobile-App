@@ -10,7 +10,7 @@ class SocialLoginScreen extends StatelessWidget {
       body: Column(
         children: [
           AuthHeader(),
-          Gap(MediaQueryHelper.screenHeight(context)*0.12),
+          Gap(MediaQueryHelper.screenHeight(context) * 0.12),
           SocialButton(
             text: AppStrings.loginWithGoogle,
             image: Images.googleSvg,
@@ -30,25 +30,33 @@ class SocialLoginScreen extends StatelessWidget {
             text: AppStrings.loginWithPassword,
             image: Images.lockSvg,
           ),
-                   Gap(MediaQueryHelper.screenHeight(context)*0.20),
-
+          Gap(MediaQueryHelper.screenHeight(context) * 0.20),
 
           RichText(
-          text: TextSpan(
-            text: AppStrings.createNewAccount , 
-            style: TextStyle(fontSize: 21, color: AppColors.white,fontWeight: FontWeight.w400,),
-            children: <TextSpan>[
-              
-              TextSpan(
-                text: ' ${AppStrings.signUp}?',
-                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600, color: AppColors.secondary),
+            text: TextSpan(
+              text: AppStrings.createNewAccount,
+              style: TextStyle(
+                fontSize: 21,
+                color: AppColors.white,
+                fontWeight: FontWeight.w400,
               ),
-              
-            ],
+              children: <TextSpan>[
+                TextSpan(
+                  text: ' ${AppStrings.signUp}?',
+                  style: TextStyle(
+                    fontSize: 21,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.secondary,
+                  ),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () {
+                     context.pushNamed(AppRouteNames.signUpScreen);
+                    },
+                ),
+              ],
+            ),
           ),
-        ),
-      
-
+       
         ],
       ),
     );
