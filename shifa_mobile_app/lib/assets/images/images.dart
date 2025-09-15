@@ -20,5 +20,11 @@ class Images {
   static const String assistantSvg = "$assets/assistant.svg";
   static const String doctorImageSvg = "$assets/doctor_image.svg";
   static const String doctorImagePng = "$assets/doctor_image.png";
+  static const String lindaSvg = "$assets/linda.svg";
+  static const String lindaPng = "$assets/lindaPng.png";
+  static const String clockSvg = "$assets/clock.svg";
+  static const String arrowForwardBlack = "$assets/arrow_forward_black.svg";
+  static const String linda = "$assets/linda.png";
+  static const String therapistPng = "$assets/therapist.png";
   
 }

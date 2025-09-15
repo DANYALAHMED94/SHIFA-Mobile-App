@@ -1,11 +1,13 @@
 import 'package:shifa_mobile_app/core/exports.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/all_appointments_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/appointment_detail_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/login_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/profile_setup_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/sign_up_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/bottom_nav/presentation/screens/doctor_nav_bar_screen.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: "/",
+  initialLocation: "/appointment_detail_screen",
   routes: [
     GoRoute(
       path: "/",
@@ -63,6 +65,20 @@ final GoRouter router = GoRouter(
         return DoctorNavBarScreen();
       },
     ),
+            GoRoute(
+      path: "/all_appointments_screen",
+      name: AppRouteNames.allAppointmentsScreen,
+      builder: (context, state) {
+        return AllAppointmentsScreen();
+      },
+    ),
+                GoRoute(
+      path: "/appointment_detail_screen",
+      name: AppRouteNames.appointmentDetail,
+      builder: (context, state) {
+        return AppointmentDetailScreen();
+      },
+    ),
   ],
 );
 
@@ -75,4 +91,6 @@ class AppRouteNames {
   static const String signUpScreen = "signUp_screen";
   static const String profileSetupScreen = "profile_setup_screen";
   static const String doctorNavbarScreen = "doctor_nav_bar_screen";
+  static const String allAppointmentsScreen = "all_appointments_screen";
+  static const String appointmentDetail = "appointment_detail_screen";
 }

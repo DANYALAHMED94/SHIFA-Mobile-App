@@ -21,4 +21,14 @@ export 'package:flutter/gestures.dart';
 export 'package:shifa_mobile_app/core/widgets/custom_textfield.dart';
 export 'package:shifa_mobile_app/core/widgets/custom_drop_down.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/widgets/add_picture_widget.dart';
-
+export 'package:shifa_mobile_app/core/widgets/appointment_card.dart';
+export 'package:shifa_mobile_app/core/widgets/see_all_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/home/presentation/widgets/doctor_home_screen_header.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/home/presentation/widgets/dot_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/home/presentation/widgets/upcoming_widget.dart';
+export 'package:smooth_page_indicator/smooth_page_indicator.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/home/presentation/widgets/set_availability.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/appointment_tabbar_header_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/appointment_tabbar_screens.dart';
+export 'package:shifa_mobile_app/core/widgets/appbar_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/appointment_info.dart';

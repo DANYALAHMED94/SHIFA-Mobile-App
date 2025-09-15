@@ -35,6 +35,53 @@ class AppStrings {
   static const String hello = "Hello,";
   static const String drMike = "Dr Mike";
   static const String psychologist = "(Psychologist)";
+  static const String upcomingAppointments = "Upcoming Appointments";
+  static const String viewAll = "View All";
+  static const String start  = "Start";
+  static const String linda  = "Linda";
+  static const String therapy  = "Therapy";
+  static const String location  = "Location";
+  static const String online  = "Online";
+  static const String date12  = "12 7, 2025";
+  static const String time630  = "6:30 pm";
+  static const String setAvailability  = "Set Availability";
+  static const String patientHistory  = "Patient History";
+  static const String id  = "P-1024";
+  static const String number  = "+92-300-1234567";
+  static const String appointments  = "Appointments";
+  static const String appointmentsDetail  = "Appointment Details";
+  static const String upcoming  = "Upcoming";
+  static const String patient  = "Patient";
+  static const String age  = "Age";
+  static const String gender  = "Gender";
+  static const String n23  = "23";
+  static const String female  = "Female";
+  static const String contact  = "Contact";
+  static const String patientID  = "Patient ID";
+  static const String idP1024  = "ID: P-1024";
+  static const String contactNum  = "0932323444";
+  static const String doctor  = "Doctor";
+  static const String therapist  = "Therapist";
+  static const String years10Exp  = "10 years exp";
+  static const String appointmentReason  = "Appointment Reason";
+  static const String improveSpeechClarity  = "Improve Speech Clarity";
+  static const String starttoEndDate  = "25-05-2025 to 25-06-2025";
+  static const String inProgress  = "In Progress";
+  static const String duration  = "Duration";
+  static const String onehour  = "1 hour";
+  static const String status  = "Status";
+  static const String dateFeb22025  = "Feb 2, 2025";
+  static const String sessionTime  = "Session Time";
+  static const String sixThirtyAmToSevenThirtyAm  = "6:30 AM - 7:30 AM";
+  static const String modality  = "Modality";
+  static const String date  = "Date";
+  static const String videoCall  = "Video Call";
+  static const String preVisitDocument  = "Pre Visit Document";
+  static const String documentPdf  = "Document pdf";
+  static const String dec192025  = "Dec 19, 2025";
+  static const String male  = "Male";
+
+  
   
   
   
