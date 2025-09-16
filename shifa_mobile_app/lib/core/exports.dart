@@ -32,3 +32,6 @@ export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation
 export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/appointment_tabbar_screens.dart';
 export 'package:shifa_mobile_app/core/widgets/appbar_widget.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/appointment_info.dart';
+export 'package:shifa_mobile_app/core/widgets/appointment_detail_info.dart';
+export 'package:shifa_mobile_app/core/widgets/session_note_card.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/modality_card.dart';

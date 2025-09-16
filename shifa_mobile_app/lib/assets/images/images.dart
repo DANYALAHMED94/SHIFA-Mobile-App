@@ -26,5 +26,9 @@ class Images {
   static const String arrowForwardBlack = "$assets/arrow_forward_black.svg";
   static const String linda = "$assets/linda.png";
   static const String therapistPng = "$assets/therapist.png";
+  static const String docPng = "$assets/doc.png";
+  static const String docSvg = "$assets/doc.svg";
+  static const String requestSvg = "$assets/request.svg";
+  static const String requestSec = "$assets/requestSec.svg";
   
 }

@@ -2,7 +2,8 @@ import 'package:shifa_mobile_app/core/exports.dart';
 
 class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-  const AppbarWidget({super.key, this.title = ""});
+  final bool isBackButton;
+   AppbarWidget({super.key, this.title = "",this.isBackButton = false});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(
+        isBackButton ?  Padding(
             padding: const EdgeInsets.only(top: 15),
             child: Container(
               height: 30,
@@ -36,7 +37,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
             ),
-          ),
+          ) :    const SizedBox(width: 40),
           Padding(
             padding: const EdgeInsets.only(top: 15.0),
             child: AppText(
@@ -46,7 +47,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
               color: AppColors.primary,
             ),
           ),
-          const SizedBox(width: 40), // Empty space to balance the layout
+          const SizedBox(width: 40),
         ],
       ),
     );

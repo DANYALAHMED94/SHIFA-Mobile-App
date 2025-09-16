@@ -80,6 +80,9 @@ class AppStrings {
   static const String documentPdf  = "Document pdf";
   static const String dec192025  = "Dec 19, 2025";
   static const String male  = "Male";
+  static const String appointmentRequests  = "Appointment Requests";
+  static const String reject  = "Reject";
+  static const String accept  = "Accept";
 
   
   

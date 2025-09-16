@@ -1,4 +1,5 @@
 import 'package:shifa_mobile_app/core/exports.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/appointment_request_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/login_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/sign_up_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/home/presentation/screens/home_screen.dart';
@@ -13,7 +14,7 @@ class DoctorNavBarScreen extends StatefulWidget {
 class _DoctorNavBarScreenState extends State<DoctorNavBarScreen> {
   List doctorScreens = [
     HomeScreen(),
-    OnboardingScreen(),
+    AppointmentRequestScreen(),
     OnboardingScreenTwo(),
     LoginScreen(),
     SignUpScreen(),
@@ -44,8 +45,8 @@ class _DoctorNavBarScreenState extends State<DoctorNavBarScreen> {
             backgroundColor: AppColors.primary,
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(Images.chatsSvg),
-            label: "Chats",
+            icon: SvgPicture.asset(Images.requestSvg),
+            label: "Request",
             backgroundColor: AppColors.primary,
           ),
           BottomNavigationBarItem(
