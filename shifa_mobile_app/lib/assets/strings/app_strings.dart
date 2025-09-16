@@ -83,6 +83,23 @@ class AppStrings {
   static const String appointmentRequests  = "Appointment Requests";
   static const String reject  = "Reject";
   static const String accept  = "Accept";
+  static const String yourAvailability  = "Your Availability";
+  static const String recurringPeriod  = "Recurring Period";
+  static const String monFri  = "Mon - Fri";
+  static const String tenAMto5PM  = "10 : 00 AM - 5 : PM";
+  static const String overrides  = "Overrides";
+  static const String june16  = "June 16 Blocked(Personal)";
+  static const String availableSlots  = "Available Slots";
+  static const String adjustYourWorkingHours  = "Adjust your working hours";
+  static const String hours  = "Hours";
+  static const String type  = "Type";
+  static const String block  = "Block";
+  static const String extra  = "Extra";
+  static const String startTime  = "Start Time";
+  static const String endTime  = "End Time";
+  static const String overridePeriod  = "Override Period";
+
+
 
   
   

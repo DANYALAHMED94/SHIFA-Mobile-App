@@ -1,7 +1,4 @@
 import 'package:shifa_mobile_app/core/exports.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/widgets/pre_visit_doc.dart';
-
-
 
 class AppointmentDetailScreen extends StatelessWidget {
   const AppointmentDetailScreen({super.key});
@@ -10,7 +7,7 @@ class AppointmentDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
-      appBar: AppbarWidget(title: AppStrings.appointmentsDetail),
+      appBar: AppbarWidget(title: AppStrings.appointmentsDetail,isBackButton: true,),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(

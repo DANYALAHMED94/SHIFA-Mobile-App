@@ -36,7 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   UpcomingWidgetHome(),
                   Gap(10.0),
         
-                  SetAvailabilityWidget(),
+                  SetAvailabilityWidget(
+                    onTap: () {
+                      context.pushNamed(AppRouteNames.setAvailabilityScreen);
+                    },
+                  ),
                   Gap(10.0),
         
                    SeeAllWidget(

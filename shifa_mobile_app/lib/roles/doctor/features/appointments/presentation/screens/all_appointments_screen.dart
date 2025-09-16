@@ -12,7 +12,7 @@ class _AllAppointmentsScreenState extends State<AllAppointmentsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primary,
-      appBar: AppbarWidget(title: AppStrings.appointments,),
+      appBar: AppbarWidget(title: AppStrings.appointments,isBackButton: true,),
       body: AppointmentTabBarScreens(),
     );
   }

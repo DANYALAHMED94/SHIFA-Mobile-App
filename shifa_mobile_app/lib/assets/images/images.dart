@@ -30,5 +30,7 @@ class Images {
   static const String docSvg = "$assets/doc.svg";
   static const String requestSvg = "$assets/request.svg";
   static const String requestSec = "$assets/requestSec.svg";
+  static const String edit = "$assets/edit.svg";
+  static const String delete = "$assets/delete.svg";
   
 }

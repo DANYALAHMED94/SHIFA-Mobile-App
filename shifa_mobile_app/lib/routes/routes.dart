@@ -1,11 +1,5 @@
 import 'package:shifa_mobile_app/core/exports.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/all_appointments_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/appointment_detail_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/appointment_request_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/login_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/profile_setup_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/sign_up_screen.dart';
-import 'package:shifa_mobile_app/roles/doctor/features/bottom_nav/presentation/screens/doctor_nav_bar_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/override_period_screen.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: "/doctor_nav_bar_screen",
@@ -81,13 +75,30 @@ final GoRouter router = GoRouter(
       },
     ),
         GoRoute(
-      path: "/appointment_request_screen",
-      name: AppRouteNames.appointmentRequestScreen,
+      path: "/set_availability_screen",
+      name: AppRouteNames.setAvailabilityScreen,
       builder: (context, state) {
-        return AppointmentRequestScreen();
+        return SetAvailabilityScreen();
       },
     ),
+
+        GoRoute(
+      path: "/recurring_screen",
+      name: AppRouteNames.recurringScreen,
+      builder: (context, state) {
+        return RecurringScreen();
+      },
+    ),
+            GoRoute(
+      path: "/override_period_screen",
+      name: AppRouteNames.overridePeriod,
+      builder: (context, state) {
+        return OverridePeriodScreen();
+      },
+    ),
+
   ],
+
 );
 
 class AppRouteNames {
@@ -102,4 +113,7 @@ class AppRouteNames {
   static const String allAppointmentsScreen = "all_appointments_screen";
   static const String appointmentDetail = "appointment_detail_screen";
   static const String appointmentRequestScreen = "appointment_request_screen";
+  static const String setAvailabilityScreen = "set_availability_screen";
+  static const String recurringScreen = "recurring_screen";
+  static const String overridePeriod = "override_period_screen";
 }
