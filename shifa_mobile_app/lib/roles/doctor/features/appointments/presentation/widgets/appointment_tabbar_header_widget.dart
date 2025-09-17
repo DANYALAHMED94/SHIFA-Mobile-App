@@ -33,16 +33,16 @@ class _CustomTabBarState extends State<CustomTabBar> {
               padding: const EdgeInsets.only(right: 10,left: 10),
               margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
               decoration: BoxDecoration(
-                color: isSelected ? AppColors.primary : AppColors.white,
+                color: isSelected ? AppColors.primary : AppColors.tabbarColor,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: AppColors.primary),
+                // border: Border.all(color: AppColors.primary),
               ),
               child: Center(
                 child: AppText(
                   text: widget.tabs[index],
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
-                  color: isSelected ? AppColors.white : AppColors.primary,
+                  color: isSelected ? AppColors.white : AppColors.black,
                 ),
               ),
             ),

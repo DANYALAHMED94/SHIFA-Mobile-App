@@ -52,4 +52,13 @@ export 'package:shifa_mobile_app/roles/doctor/features/authentication/presentati
 export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/recurring_screen.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/set_availability_screen.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/bottom_nav/presentation/screens/doctor_nav_bar_screen.dart';
-// export 'package:intl/intl.dart'; 
+export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/widgets/add_slot_calender_widget.dart';
+export 'package:shifa_mobile_app/core/widgets/patients_card.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/widgets/custom_patient_appbar.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/widgets/doc_patient_session_info.dart';
+export 'package:shifa_mobile_app/core/widgets/custom_history.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/widgets/availability_card_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/widgets/time_picker_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/widgets/patient_tabbar_appointments.dart';
+
+export 'package:shifa_mobile_app/roles/doctor/features/assistants/presentation/widgets/assistant_card_widget.dart';

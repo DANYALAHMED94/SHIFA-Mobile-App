@@ -42,7 +42,9 @@ class _SetAvailabilityScreenState extends State<SetAvailabilityScreen> {
               Gap(10.0),
                            AddingAvailabilityWidget(
               text: AppStrings.availableSlots,
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(AppRouteNames.addSlotScreen);
+              },
             ),
               Gap(10.0),
 

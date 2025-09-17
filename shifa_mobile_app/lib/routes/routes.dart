@@ -1,5 +1,12 @@
 import 'package:shifa_mobile_app/core/exports.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation/screens/doc_patient_appointment_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/assistants/presentation/screens/assistant_profile_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/assistants/presentation/screens/assistant_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/add_availability_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/add_slot_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/override_period_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/all_patients_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/doctor_patient_profile.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: "/doctor_nav_bar_screen",
@@ -74,7 +81,7 @@ final GoRouter router = GoRouter(
         return AppointmentDetailScreen();
       },
     ),
-        GoRoute(
+    GoRoute(
       path: "/set_availability_screen",
       name: AppRouteNames.setAvailabilityScreen,
       builder: (context, state) {
@@ -82,23 +89,63 @@ final GoRouter router = GoRouter(
       },
     ),
 
-        GoRoute(
+    GoRoute(
       path: "/recurring_screen",
       name: AppRouteNames.recurringScreen,
       builder: (context, state) {
         return RecurringScreen();
       },
     ),
-            GoRoute(
+    GoRoute(
       path: "/override_period_screen",
       name: AppRouteNames.overridePeriod,
       builder: (context, state) {
         return OverridePeriodScreen();
       },
     ),
-
+    GoRoute(
+      path: "/add_slot_screen",
+      name: AppRouteNames.addSlotScreen,
+      builder: (context, state) {
+        return AddSlotScreen();
+      },
+    ),
+    GoRoute(
+      path: "/all_patients_screen",
+      name: AppRouteNames.allPaientScreen,
+      builder: (context, state) {
+        return AllPatientsScreen();
+      },
+    ),
+    GoRoute(
+      path: "/doctor_patient_profile_screen",
+      name: AppRouteNames.doctorPatientProfileScreen,
+      builder: (context, state) {
+        return DoctorPatientProfile();
+      },
+    ),
+    GoRoute(
+      path: "/doc_patient_appointment_screen",
+      name: AppRouteNames.docPatientAppointmentScreen,
+      builder: (context, state) {
+        return DocPatientAppointmentScreen();
+      },
+    ),
+    GoRoute(
+      path: "/assistant_screen",
+      name: AppRouteNames.assistantScreen,
+      builder: (context, state) {
+        return AssistantScreen();
+      },
+    ),
+    GoRoute(
+      path: "/assistant_profile_screen",
+      name: AppRouteNames.assistantProfileScreen,
+      builder: (context, state) {
+        return AssistantProfileScreen();
+      },
+    ),
   ],
-
 );
 
 class AppRouteNames {
@@ -116,4 +163,12 @@ class AppRouteNames {
   static const String setAvailabilityScreen = "set_availability_screen";
   static const String recurringScreen = "recurring_screen";
   static const String overridePeriod = "override_period_screen";
+  static const String addSlotScreen = "add_slot_screen";
+  static const String allPaientScreen = "all_patients_screen";
+  static const String doctorPatientProfileScreen =
+      "doctor_patient_profile_screen";
+  static const String docPatientAppointmentScreen =
+      "doc_patient_appointment_screen";
+  static const String assistantScreen = "assistant_screen";
+  static const String assistantProfileScreen = "assistant_profile_screen";
 }

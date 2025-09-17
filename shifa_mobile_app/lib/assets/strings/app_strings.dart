@@ -98,6 +98,34 @@ class AppStrings {
   static const String startTime  = "Start Time";
   static const String endTime  = "End Time";
   static const String overridePeriod  = "Override Period";
+  static const String addSlot  = "Add Slot";
+  static const String selectDate  = "Select Date";
+  static const String availability   = "Availability";
+  static const String mon225   = "Mon-2-25";
+  static const String sxi30   = "6  :  30  AM";
+  static const String four30   = "4  :  30  AM";
+  static const String to   = "To";
+  static const String yourPatients   = "Your Patients";
+  static const String allPatients   = "All Patients";
+  static const String treated   = "Treated";
+  static const String searchPatientByID   = "Search patient by ID";
+  static const String samantha   = "Samantha";
+  static const String sessions   = "Sessions";
+  static const String completed   = "Completed";
+  static const String remaining   = "Remaining";
+  static const String appointmentHistory   = "Appointment History";
+  static const String assistants   = "Assistants";
+  static const String assistant   = "Assistant";
+  static const String phychologist   = "(Phychologist)";
+  static const String drSteve   = "Dr Steve";
+  static const String reviews   = "Reviews";
+  static const String patients   = "Patients";
+  static const String yearsExp   = "Years Exp";
+  static const String preferredLanguage   = "Preferred Language";
+  static const String english   = "English";
+  static const String inviteAsAssiatant   = "Invite As Assiatant";
+  static const String monToFriday   = "Monday to  Friday: 9:00AM - 5:00 PM";
+
 
 
 

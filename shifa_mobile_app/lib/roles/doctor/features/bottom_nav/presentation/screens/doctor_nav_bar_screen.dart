@@ -3,6 +3,7 @@ import 'package:shifa_mobile_app/roles/doctor/features/appointments/presentation
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/login_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/authentication/presentation/screens/sign_up_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/home/presentation/screens/home_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/all_patients_screen.dart';
 
 class DoctorNavBarScreen extends StatefulWidget {
   const DoctorNavBarScreen({super.key});
@@ -14,7 +15,7 @@ class DoctorNavBarScreen extends StatefulWidget {
 class _DoctorNavBarScreenState extends State<DoctorNavBarScreen> {
   List doctorScreens = [
     HomeScreen(),
-    AppointmentRequestScreen(),
+    AllPatientsScreen(),
     OnboardingScreenTwo(),
     LoginScreen(),
     SignUpScreen(),
@@ -36,17 +37,17 @@ class _DoctorNavBarScreenState extends State<DoctorNavBarScreen> {
         currentIndex: _selectededIndex,
         backgroundColor: AppColors.primary,
         selectedItemColor: AppColors.secondary,
-        unselectedItemColor: AppColors.secondary,
+        unselectedItemColor:  AppColors.white ,
         onTap: onTapItems,
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(Images.doctorHome),
+            icon: _selectededIndex == 0 ?SvgPicture.asset(Images.doctorHome) : SvgPicture.asset(Images.homeSvg),
             label: "Home",
             backgroundColor: AppColors.primary,
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(Images.requestSvg),
-            label: "Request",
+            icon:_selectededIndex == 1 ? SvgPicture.asset(Images.patientSec) : SvgPicture.asset(Images.patientSvg),
+            label: "Patients",
             backgroundColor: AppColors.primary,
           ),
           BottomNavigationBarItem(

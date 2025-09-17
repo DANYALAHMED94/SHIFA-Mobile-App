@@ -10,6 +10,9 @@ class AppColors {
   static  const  greenColor =  Color(0xff007B3A);
   static  const  lightGrey =  Color(0xff838383);
   static  const  textColor =  Color(0xff484848);
+  static  const  tabbarColor =  Color(0xffE6E6E6);
+  static  const  yellow =  Colors.yellow;
+
   
 
 

@@ -1,5 +1,4 @@
 import 'package:shifa_mobile_app/core/exports.dart';
-import 'package:shifa_mobile_app/core/widgets/patients_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -46,9 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
                    SeeAllWidget(
                     title: AppStrings.patientHistory,
                     subTitle: AppStrings.viewAll,
+                    onTap: (){
+                      context.pushNamed(AppRouteNames.allPaientScreen);
+                    },
                   ),
                   Gap(10.0),
-                  PatientsCard(),
+                  PatientsCard(onTap: (){
+                    context.pushNamed(AppRouteNames.doctorPatientProfileScreen);
+                  }),
                   Gap(20.0),
         
                 ],

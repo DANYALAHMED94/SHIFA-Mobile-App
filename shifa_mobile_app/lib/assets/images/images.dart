@@ -32,5 +32,16 @@ class Images {
   static const String requestSec = "$assets/requestSec.svg";
   static const String edit = "$assets/edit.svg";
   static const String delete = "$assets/delete.svg";
+  static const String searchPer = "$assets/search_per.svg";
+  static const String patient = "$assets/patient.svg";
+  static const String patientPng = "$assets/patientPng.png";
+  static const String patientSvg = "$assets/patientSvg.Svg";
+  static const String alertSvg = "$assets/alert.svg";
+  static const String profileSec = "$assets/profileSec.svg";
+  static const String homeSec = "$assets/homeSec.svg";
+  static const String assistantSec = "$assets/assistantSec.svg";
+  static const String alertSec = "$assets/alertSec.svg";
+  static const String homeSvg = "$assets/homeSvg.svg";
+  static const String patientSec = "$assets/patientSec.svg";
   
 }

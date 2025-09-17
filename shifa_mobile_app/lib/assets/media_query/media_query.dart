@@ -1,6 +1,4 @@
-// lib/core/utils/media_query.dart
-
-import 'package:flutter/widgets.dart';
+import 'package:shifa_mobile_app/core/exports.dart';
 
 class MediaQueryHelper {
 

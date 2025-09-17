@@ -44,7 +44,8 @@ class _AppointmentCardState extends State<AppointmentCard> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            width: MediaQueryHelper.screenWidth(context)*0.48,
+                            // color: Colors.red,
+                            width: MediaQueryHelper.screenWidth(context)*0.40,
                             child: AppText(
                               text: AppStrings.linda,
                               fontSize: 22,
@@ -65,8 +66,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                     ],
                   ),
                   Container(
-                    // height: 35,
-                    // width: MediaQueryHelper.screenWidth(context)*0.20,
+               
                     padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 5),
                     decoration: BoxDecoration(
                       color: AppColors.white,
