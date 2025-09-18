@@ -125,6 +125,7 @@ class AppStrings {
   static const String english   = "English";
   static const String inviteAsAssiatant   = "Invite As Assiatant";
   static const String monToFriday   = "Monday to  Friday: 9:00AM - 5:00 PM";
+  static const String lorem   = "lorem lorem lorem lorem lorem lorem";
 
 
 

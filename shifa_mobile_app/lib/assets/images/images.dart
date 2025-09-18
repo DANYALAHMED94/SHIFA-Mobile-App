@@ -16,7 +16,7 @@ class Images {
   static const String doctorHome = "$assets/home.svg";
   static const String chatsSvg = "$assets/chats.svg";
   static const String filesSvg = "$assets/files.svg";
-  static const String profileSvg = "$assets/profile.svg";
+  static const String profile = "$assets/profile.svg";
   static const String assistantSvg = "$assets/assistant.svg";
   static const String doctorImageSvg = "$assets/doctor_image.svg";
   static const String doctorImagePng = "$assets/doctor_image.png";
@@ -37,7 +37,7 @@ class Images {
   static const String patientPng = "$assets/patientPng.png";
   static const String patientSvg = "$assets/patientSvg.Svg";
   static const String alertSvg = "$assets/alert.svg";
-  static const String profileSec = "$assets/profileSec.svg";
+  static const String profileSvg = "$assets/profileSvg.svg";
   static const String homeSec = "$assets/homeSec.svg";
   static const String assistantSec = "$assets/assistantSec.svg";
   static const String alertSec = "$assets/alertSec.svg";

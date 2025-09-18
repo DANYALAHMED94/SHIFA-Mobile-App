@@ -60,5 +60,10 @@ export 'package:shifa_mobile_app/core/widgets/custom_history.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/widgets/availability_card_widget.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/widgets/time_picker_widget.dart';
 export 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/widgets/patient_tabbar_appointments.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/chat/presentation/widgets/chat_card_widget.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/chat/presentation/widgets/chat_field.dart';
 
 export 'package:shifa_mobile_app/roles/doctor/features/assistants/presentation/widgets/assistant_card_widget.dart';
+
+export 'package:shifa_mobile_app/roles/doctor/features/home/presentation/screens/home_screen.dart';
+export 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/all_patients_screen.dart';

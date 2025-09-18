@@ -5,11 +5,12 @@ import 'package:shifa_mobile_app/roles/doctor/features/assistants/presentation/s
 import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/add_availability_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/add_slot_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/availability/presentation/screens/override_period_screen.dart';
+import 'package:shifa_mobile_app/roles/doctor/features/chat/presentation/screens/chat_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/all_patients_screen.dart';
 import 'package:shifa_mobile_app/roles/doctor/features/patient/presentation/screens/doctor_patient_profile.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: "/doctor_nav_bar_screen",
+  initialLocation: "/chat_screen",
   routes: [
     GoRoute(
       path: "/",
@@ -145,6 +146,13 @@ final GoRouter router = GoRouter(
         return AssistantProfileScreen();
       },
     ),
+        GoRoute(
+      path: "/chat_screen",
+      name: AppRouteNames.chatScreen,
+      builder: (context, state) {
+        return ChatScreen();
+      },
+    ),
   ],
 );
 
@@ -171,4 +179,5 @@ class AppRouteNames {
       "doc_patient_appointment_screen";
   static const String assistantScreen = "assistant_screen";
   static const String assistantProfileScreen = "assistant_profile_screen";
+  static const String chatScreen = "chat_screen";
 }
